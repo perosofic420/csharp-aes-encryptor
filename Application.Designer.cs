@@ -30,6 +30,7 @@ namespace Encryptor
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Application));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -133,8 +134,6 @@ namespace Encryptor
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "github.com/perosofic420/csharp-aes-encryptor";
-            this.linkLabel1.Links.Clear();
-            this.linkLabel1.Links.Add(0, linkLabel1.Text.Length, "https://github.com/perosofic420/csharp-aes-encryptor");
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Application
@@ -152,6 +151,7 @@ namespace Encryptor
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(420, 255);
             this.Name = "Application";
             this.Text = "Encryptor";
