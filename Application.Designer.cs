@@ -133,7 +133,9 @@ namespace Encryptor
             this.linkLabel1.Size = new System.Drawing.Size(229, 13);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
+            this.linkLabel1.Links.Clear();
             this.linkLabel1.Text = "github.com/perosofic420/csharp-aes-encryptor";
+            this.linkLabel1.Links.Add(0, linkLabel1.Text.Length, "https://github.com/perosofic420/csharp-aes-encryptor");
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Application
