@@ -1,6 +1,8 @@
-﻿namespace Encryptor
+﻿using System.Windows.Forms;
+
+namespace Encryptor
 {
-    partial class Form1
+    partial class Application
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // textBox1
@@ -74,9 +77,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 13);
+            this.label2.Size = new System.Drawing.Size(185, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Key (Must be 32 characters)";
+            this.label2.Text = "Key (Must be 16, 24 or 32 characters)";
             // 
             // label3
             // 
@@ -109,17 +112,37 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(280, 6);
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Location = new System.Drawing.Point(280, 9);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(335, 186);
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(363, 211);
             this.richTextBox1.TabIndex = 8;
             this.richTextBox1.Text = "";
             // 
-            // Form1
+            // linkLabel1
+            // 
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkArea = new System.Windows.Forms.LinkArea(0, 44);
+            this.linkLabel1.Location = new System.Drawing.Point(9, 207);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(229, 13);
+            this.linkLabel1.TabIndex = 9;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "github.com/perosofic420/csharp-aes-encryptor";
+            this.linkLabel1.Links.Clear();
+            this.linkLabel1.Links.Add(0, linkLabel1.Text.Length, "https://github.com/perosofic420/csharp-aes-encryptor");
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // Application
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 202);
+            this.ClientSize = new System.Drawing.Size(655, 229);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -129,7 +152,8 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
+            this.MinimumSize = new System.Drawing.Size(420, 255);
+            this.Name = "Application";
             this.Text = "Encryptor";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -147,6 +171,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

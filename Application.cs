@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Encryptor
 {
-    public partial class Form1 : Form
+    public partial class Application : Form
     {
-        public Form1()
+        public Application()
         {
             InitializeComponent();
         }
@@ -43,9 +44,13 @@ namespace Encryptor
             }
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = e.Link.LinkData.ToString(),
+                UseShellExecute = true 
+            });
         }
     }
 }
