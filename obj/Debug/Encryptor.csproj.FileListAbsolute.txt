@@ -8,3 +8,13 @@ C:\Users\perosofic\Documents\Encryptor\obj\Debug\Encryptor.csproj.GenerateResour
 C:\Users\perosofic\Documents\Encryptor\obj\Debug\Encryptor.csproj.CoreCompileInputs.cache
 C:\Users\perosofic\Documents\Encryptor\obj\Debug\Encryptor.exe
 C:\Users\perosofic\Documents\Encryptor\obj\Debug\Encryptor.pdb
+C:\Users\linuxisbetter\Desktop\GitHub\csharp-encryptor\bin\Debug\Encryptor.exe.config
+C:\Users\linuxisbetter\Desktop\GitHub\csharp-encryptor\bin\Debug\Encryptor.exe
+C:\Users\linuxisbetter\Desktop\GitHub\csharp-encryptor\bin\Debug\Encryptor.pdb
+C:\Users\linuxisbetter\Desktop\GitHub\csharp-encryptor\obj\Debug\Encryptor.csproj.AssemblyReference.cache
+C:\Users\linuxisbetter\Desktop\GitHub\csharp-encryptor\obj\Debug\Encryptor.Form1.resources
+C:\Users\linuxisbetter\Desktop\GitHub\csharp-encryptor\obj\Debug\Encryptor.Properties.Resources.resources
+C:\Users\linuxisbetter\Desktop\GitHub\csharp-encryptor\obj\Debug\Encryptor.csproj.GenerateResource.cache
+C:\Users\linuxisbetter\Desktop\GitHub\csharp-encryptor\obj\Debug\Encryptor.csproj.CoreCompileInputs.cache
+C:\Users\linuxisbetter\Desktop\GitHub\csharp-encryptor\obj\Debug\Encryptor.exe
+C:\Users\linuxisbetter\Desktop\GitHub\csharp-encryptor\obj\Debug\Encryptor.pdb
